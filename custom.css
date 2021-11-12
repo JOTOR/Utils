@@ -1,0 +1,33 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+/* Change outer background and make the notebook take all available width */
+.container {
+    background: #FAFAF5 !important;
+}   
+
+/* Change inner background (CODE) */
+div.input_area {
+    background: #F4F4E2 !important;
+}
+
+/* Prevent the edit cell highlight box from getting clipped;
+ * important so that it also works when cell is in edit mode */
+div.cell.selected {
+    border-left-width: 1px !important;
+}
+
+.CodeMirror, .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+    font-size: 115%;
+    line-height: 125%;
+}
+
+.container { width:95% !important; }
